@@ -138,6 +138,7 @@ return {
         },
         eslint = {
           on_attach = function(_, bufnr)
+            -- Automatically run eslint --fix on save
             vim.api.nvim_create_autocmd('BufWritePre', {
               buffer = bufnr,
               command = 'EslintFixAll',
