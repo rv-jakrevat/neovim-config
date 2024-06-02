@@ -24,6 +24,7 @@ return {
         -- Disable JS/TS because I use ESLint for formatting (sue me)
         typescript = true,
         javascript = true,
+        vue = true,
       }
       return {
         timeout_ms = 500,
