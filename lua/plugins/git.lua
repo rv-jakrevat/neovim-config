@@ -10,12 +10,12 @@ return {
       require('git-conflict').setup {
         default_mapping = false,
       }
-      vim.keymap.set('n', '<leader>co', ':GitConflictChooseOurs', { desc = '[C]hoose [O]urs' })
-      vim.keymap.set('n', '<leader>ct', ':GitConflictChooseTheirs', { desc = '[C]hoose [T]heirs' })
-      vim.keymap.set('n', '<leader>cb', ':GitConflictChooseBoth', { desc = '[C]hoose [B]oth' })
-      vim.keymap.set('n', '<leader>c0', ':GitConflictChooseNone', { desc = '[C]hoose None' })
-      vim.keymap.set('n', '<leader>]x', ':GitConflictNextConflict', { desc = 'Next Conflict' })
-      vim.keymap.set('n', '<leader>[x', ':GitConflictPrevConflict', { desc = 'Previous Conflict' })
+      vim.keymap.set('n', '<leader>co', ':GitConflictChooseOurs<CR>', { desc = '[C]hoose [O]urs' })
+      vim.keymap.set('n', '<leader>ct', ':GitConflictChooseTheirs<CR>', { desc = '[C]hoose [T]heirs' })
+      vim.keymap.set('n', '<leader>cb', ':GitConflictChooseBoth<CR>', { desc = '[C]hoose [B]oth' })
+      vim.keymap.set('n', '<leader>c0', ':GitConflictChooseNone<CR>', { desc = '[C]hoose None' })
+      vim.keymap.set('n', '<leader>]x', ':GitConflictNextConflict<CR>', { desc = 'Next Conflict' })
+      vim.keymap.set('n', '<leader>[x', ':GitConflictPrevConflict<CR>', { desc = 'Previous Conflict' })
     end,
   },
   -- Show git status in the sign column

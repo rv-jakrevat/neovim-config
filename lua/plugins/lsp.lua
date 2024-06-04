@@ -136,6 +136,7 @@ return {
             },
           },
         },
+        tsserver = {},
         eslint = {
           on_attach = function(_, bufnr)
             -- Automatically run eslint --fix on save
@@ -177,37 +178,37 @@ return {
       }
     end,
   },
-  {
-    'pmizio/typescript-tools.nvim',
-    dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
-    opts = {},
-    config = function()
-      require('typescript-tools').setup {
-        settings = {
-          -- tsserver_file_preferences = {
-          --   Maybe reenable one day once this stops erroring
-          --   includeInlayEnumMemberValueHints = true,
-          --   includeInlayFunctionLikeReturnTypeHints = true,
-          --   includeInlayFunctionParameterTypeHints = true,
-          --   includeInlayParameterNameHints = 'all',
-          --   includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-          --   includeInlayPropertyDeclarationTypeHints = true,
-          --   includeInlayVariableTypeHints = true,
-          -- },
-          -- tsserver_plugins = {
-          --   This is not working for me, so I'm disabling it for now
-          --   https://github.com/pmizio/typescript-tools.nvim/issues/249
-          --   '@vue/typescript-plugin',
-          -- },
-        },
-        filetypes = {
-          'typescript',
-          'typescriptreact',
-          'javascript',
-          'javascriptreact',
-          'vue',
-        },
-      }
-    end,
-  },
+  -- {
+  --   'pmizio/typescript-tools.nvim',
+  --   dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
+  --   opts = {},
+  --   config = function()
+  --     require('typescript-tools').setup {
+  --       settings = {
+  --         -- tsserver_file_preferences = {
+  --         --   Maybe reenable one day once this stops erroring
+  --         --   includeInlayEnumMemberValueHints = true,
+  --         --   includeInlayFunctionLikeReturnTypeHints = true,
+  --         --   includeInlayFunctionParameterTypeHints = true,
+  --         --   includeInlayParameterNameHints = 'all',
+  --         --   includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+  --         --   includeInlayPropertyDeclarationTypeHints = true,
+  --         --   includeInlayVariableTypeHints = true,
+  --         -- },
+  --         -- tsserver_plugins = {
+  --         --   This is not working for me, so I'm disabling it for now
+  --         --   https://github.com/pmizio/typescript-tools.nvim/issues/249
+  --         --   '@vue/typescript-plugin',
+  --         -- },
+  --       },
+  --       filetypes = {
+  --         'typescript',
+  --         'typescriptreact',
+  --         'javascript',
+  --         'javascriptreact',
+  --         'vue',
+  --       },
+  --     }
+  --   end,
+  -- },
 }
