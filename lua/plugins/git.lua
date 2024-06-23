@@ -13,7 +13,7 @@ return {
       vim.keymap.set('n', '<leader>co', ':GitConflictChooseOurs<CR>', { desc = '[C]hoose [O]urs' })
       vim.keymap.set('n', '<leader>ct', ':GitConflictChooseTheirs<CR>', { desc = '[C]hoose [T]heirs' })
       vim.keymap.set('n', '<leader>cb', ':GitConflictChooseBoth<CR>', { desc = '[C]hoose [B]oth' })
-      vim.keymap.set('n', '<leader>c0', ':GitConflictChooseNone<CR>', { desc = '[C]hoose None' })
+      vim.keymap.set('n', '<leader>c0', ':GitConflictChooseNone<CR>', { desc = '[C]hoose N[0]ne' })
       vim.keymap.set('n', '<leader>]x', ':GitConflictNextConflict<CR>', { desc = 'Next Conflict' })
       vim.keymap.set('n', '<leader>[x', ':GitConflictPrevConflict<CR>', { desc = 'Previous Conflict' })
     end,
